@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<div class='container'>
+
+	<p class="lead">
+	Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor nquam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+	</p>
+
+	<div class='row portfolio'>
+		<div class='col-sm-4'>
+			<div class="box-image">
+				<div class="image">
+					<img src="{% static "img/aaa.jpg"%}" alt="" class="img-responsive">
+			    </div>
+			</div>
+		</div>
+		<div class='col-sm-4'>
+			<div class="box-image">
+				<div class="image">
+					<img src="{% static "img/bbb.jpg"%}" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
+		<div class='col-sm-4'>
+			<div class="box-image">
+				<div class="image">
+					<img src="{% static "img/ccc.jpg"%}" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+	<div id="content">
+		<div class="container">
+			<div class="row">
+			{% for product in products %}
+				<div class="row products">
+					<div class="col-md-3 col-sm-6 text-center">
+					<h3>{{product.name}}</h3>
+					<li>name: {{product.name}}</li>
+					<li>price: {{product.price}}</li>
+					<li>quantity: {{product.quantity}}</li>
+					</div>
+					<div class="col-md-3	col-sm-6">
+	            	    <div class="product">
+	                        <div class="image">
+	                        	<img src="{{product.image1.url}}"	class="img-responsive image1">
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-md-3	col-sm-6">
+	            	    <div class="product">
+	                        <div class="image">
+	                        	<img src="{{product.image2.url}}"	class="img-responsive image1">
+	                        </div>
+	                    </div>
+	                </div> 
+	                <div class="col-md-3	col-sm-6">
+	            	    <div class="product">
+	                        <div class="image">
+	                        	<img src="{{product.image3.url}}"	class="img-responsive image1">
+	                        </div>
+	                    </div>
+	                </div> 
+	            </div>
+            {% endfor %}
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

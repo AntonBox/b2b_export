@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block content %}
+	{% if form%}
+		<div class='text-center'>
+			<form action="{% url 'send_contact' %}" method="post">{% csrf_token %}
+				{{form.as_p}}
+				<button type="submit" class="btn btn-success">Send Message</button>
+			</form>
+		</div>
+	{% else %}
+
+		<h3 class = 'text-center'>We have sent contacts on your email</h3>
+	{% endif %}
+
+    <div id="map">
+    </div>
+
+{% endblock %}
+
+{% block extra_script %}
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+	<script type="text/javascript"src="{% static "js/gmaps.init.js" %}"></script>
+	<script type="text/javascript"src="{% static "js/gmaps.js" %}"></script>
+{% endblock %}
