@@ -11,8 +11,8 @@ ALLOWED_HOSTS = []
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'antonbox'
-EMAIL_HOST_PASSWORD = 'anton3577753box'
+EMAIL_HOST_USER = 'user'
+EMAIL_HOST_PASSWORD = 'password'
 EMAIL_USE_TLS = True
 
 
